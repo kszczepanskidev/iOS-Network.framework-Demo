@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6EF393CF38A9279B79B9186D /* Pods_NetworkingDemoReceiver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8481B87D6A49A7181FDD4062 /* Pods_NetworkingDemoReceiver.framework */; };
+		AE3A39B6217F5BEC004F138B /* AsyncSocketListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3A39B5217F5BEC004F138B /* AsyncSocketListener.swift */; };
+		AE754A2B215A806A0032C0ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE754A2A215A806A0032C0ED /* AppDelegate.swift */; };
+		AE754A2D215A806A0032C0ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE754A2C215A806A0032C0ED /* ViewController.swift */; };
+		AE754A2F215A806E0032C0ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE754A2E215A806E0032C0ED /* Assets.xcassets */; };
+		AE754A32215A806E0032C0ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE754A30215A806E0032C0ED /* Main.storyboard */; };
+		AEF978AF21777ACF0052B551 /* FrameworkUDPListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF978AE21777ACF0052B551 /* FrameworkUDPListener.swift */; };
+		AEF978B12178B2480052B551 /* SocketUDPListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF978B02178B2480052B551 /* SocketUDPListener.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5296556E0D797E4D837FCDAA /* Pods-NetworkingDemoReceiver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkingDemoReceiver.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkingDemoReceiver/Pods-NetworkingDemoReceiver.release.xcconfig"; sourceTree = "<group>"; };
+		8481B87D6A49A7181FDD4062 /* Pods_NetworkingDemoReceiver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkingDemoReceiver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE3A39B5217F5BEC004F138B /* AsyncSocketListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncSocketListener.swift; sourceTree = "<group>"; };
+		AE754A27215A806A0032C0ED /* NetworkingDemoServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkingDemoServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE754A2A215A806A0032C0ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE754A2C215A806A0032C0ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE754A2E215A806E0032C0ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE754A31215A806E0032C0ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE754A33215A806E0032C0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE754A34215A806E0032C0ED /* NetworkingDemoReceiver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NetworkingDemoReceiver.entitlements; sourceTree = "<group>"; };
+		AEF978AE21777ACF0052B551 /* FrameworkUDPListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkUDPListener.swift; sourceTree = "<group>"; };
+		AEF978B02178B2480052B551 /* SocketUDPListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketUDPListener.swift; sourceTree = "<group>"; };
+		E400851771E0E87880E389EB /* Pods-NetworkingDemoReceiver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkingDemoReceiver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkingDemoReceiver/Pods-NetworkingDemoReceiver.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE754A24215A806A0032C0ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EF393CF38A9279B79B9186D /* Pods_NetworkingDemoReceiver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE754A1E215A806A0032C0ED = {
+			isa = PBXGroup;
+			children = (
+				AE754A29215A806A0032C0ED /* NetworkingDemoReceiver */,
+				AE754A28215A806A0032C0ED /* Products */,
+				B83B8A252173628F2ACD6A63 /* Pods */,
+				E8491955F2DE1194BA5E513E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE754A28215A806A0032C0ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE754A27215A806A0032C0ED /* NetworkingDemoServer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE754A29215A806A0032C0ED /* NetworkingDemoReceiver */ = {
+			isa = PBXGroup;
+			children = (
+				AEDE8FCA215A844000791260 /* Networking */,
+				AEDE8FCB215A844900791260 /* View Controllers */,
+				AE754A30215A806E0032C0ED /* Main.storyboard */,
+				AEDE8FC9215A843200791260 /* Supporting Files */,
+			);
+			path = NetworkingDemoReceiver;
+			sourceTree = "<group>";
+		};
+		AEDE8FC9215A843200791260 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE754A2A215A806A0032C0ED /* AppDelegate.swift */,
+				AE754A2E215A806E0032C0ED /* Assets.xcassets */,
+				AE754A33215A806E0032C0ED /* Info.plist */,
+				AE754A34215A806E0032C0ED /* NetworkingDemoReceiver.entitlements */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AEDE8FCA215A844000791260 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AEF978AE21777ACF0052B551 /* FrameworkUDPListener.swift */,
+				AEF978B02178B2480052B551 /* SocketUDPListener.swift */,
+				AE3A39B5217F5BEC004F138B /* AsyncSocketListener.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		AEDE8FCB215A844900791260 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE754A2C215A806A0032C0ED /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B83B8A252173628F2ACD6A63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E400851771E0E87880E389EB /* Pods-NetworkingDemoReceiver.debug.xcconfig */,
+				5296556E0D797E4D837FCDAA /* Pods-NetworkingDemoReceiver.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E8491955F2DE1194BA5E513E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8481B87D6A49A7181FDD4062 /* Pods_NetworkingDemoReceiver.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE754A26215A806A0032C0ED /* NetworkingDemoServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE754A37215A806E0032C0ED /* Build configuration list for PBXNativeTarget "NetworkingDemoServer" */;
+			buildPhases = (
+				92263783CBA1CCC8AAF5FD1C /* [CP] Check Pods Manifest.lock */,
+				AE754A23215A806A0032C0ED /* Sources */,
+				AE754A24215A806A0032C0ED /* Frameworks */,
+				AE754A25215A806A0032C0ED /* Resources */,
+				13EE038A2F6E0A4613DD741A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworkingDemoServer;
+			productName = NetworkingDemoReceiver;
+			productReference = AE754A27215A806A0032C0ED /* NetworkingDemoServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE754A1F215A806A0032C0ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Kamil Szczepański";
+				TargetAttributes = {
+					AE754A26215A806A0032C0ED = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = AE754A22215A806A0032C0ED /* Build configuration list for PBXProject "NetworkingDemoServer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE754A1E215A806A0032C0ED;
+			productRefGroup = AE754A28215A806A0032C0ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE754A26215A806A0032C0ED /* NetworkingDemoServer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE754A25215A806A0032C0ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE754A2F215A806E0032C0ED /* Assets.xcassets in Resources */,
+				AE754A32215A806E0032C0ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13EE038A2F6E0A4613DD741A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NetworkingDemoReceiver/Pods-NetworkingDemoReceiver-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetworkingDemoReceiver/Pods-NetworkingDemoReceiver-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92263783CBA1CCC8AAF5FD1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetworkingDemoReceiver-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE754A23215A806A0032C0ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEF978AF21777ACF0052B551 /* FrameworkUDPListener.swift in Sources */,
+				AE3A39B6217F5BEC004F138B /* AsyncSocketListener.swift in Sources */,
+				AE754A2D215A806A0032C0ED /* ViewController.swift in Sources */,
+				AE754A2B215A806A0032C0ED /* AppDelegate.swift in Sources */,
+				AEF978B12178B2480052B551 /* SocketUDPListener.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE754A30215A806E0032C0ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE754A31215A806E0032C0ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE754A35215A806E0032C0ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE754A36215A806E0032C0ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		AE754A38215A806E0032C0ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E400851771E0E87880E389EB /* Pods-NetworkingDemoReceiver.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "NetworkingDemoReceiver/Supporting Files/NetworkingDemoReceiver.entitlements";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "NetworkingDemoReceiver/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = kszczep.NetworkingDemoServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		AE754A39215A806E0032C0ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5296556E0D797E4D837FCDAA /* Pods-NetworkingDemoReceiver.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "NetworkingDemoReceiver/Supporting Files/NetworkingDemoReceiver.entitlements";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "NetworkingDemoReceiver/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = kszczep.NetworkingDemoServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE754A22215A806A0032C0ED /* Build configuration list for PBXProject "NetworkingDemoServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE754A35215A806E0032C0ED /* Debug */,
+				AE754A36215A806E0032C0ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE754A37215A806E0032C0ED /* Build configuration list for PBXNativeTarget "NetworkingDemoServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE754A38215A806E0032C0ED /* Debug */,
+				AE754A39215A806E0032C0ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE754A1F215A806A0032C0ED /* Project object */;
+}

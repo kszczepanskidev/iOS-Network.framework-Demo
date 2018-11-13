@@ -1,0 +1,6 @@
+platform :osx, '10.14'
+
+target 'NetworkingDemoReceiver' do
+  use_frameworks!
+  pod 'CocoaAsyncSocket'
+end
